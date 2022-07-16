@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Contact created</title>
+  </head>
+  <body th:object="${contact}">
+    <h2>Your contact information</h2>
+    <p>ID: <span th:text="*{id}" /></p>
+    <p>Name: <span th:text="*{name}" /></p>
+    <p>Email: <span th:text="*{email}" /></p>
+    <p>Phone Number: <span th:text="*{phoneNumber}" /></p>
+    <p>Click <a href="/addressbook">here</a> to go back.</p>
+  </body>
+</html>
